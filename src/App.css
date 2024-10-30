@@ -1,0 +1,1010 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Global Styles */
+body, .App {
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Fallback color */
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); 
+  background-size: cover; /* Ensures the image covers the entire page */
+  background-attachment: fixed; /* Keeps background fixed when scrolling */
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  color: white; /* Ensures text is visible */
+}
+
+/* Apply default padding and spacing for each section */
+#home, #projects, #about, #skills, #contact {
+  background-color: transparent; /* Remove any white background */
+  padding: 100px 20px; /* Add padding to each section for spacing */
+  color: white; /* Ensure text is visible on dark background */
+}
+
+#home{
+  padding: 0px 0px;
+  margin-top:0;
+}
+
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: left; /* Align text as needed */
+}
+
+p {
+  color: #ddd; /* Make the paragraph text a lighter shade of white */
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Navbar */
+.navbar {
+  margin-bottom: 0;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between; /* This ensures items are spaced between the name and links */
+  align-items: center; /* Vertically centers the content */
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0px 4px 2px -2px gray;
+}
+
+.navbar-left {
+  flex-grow: 1;
+}
+
+.navbar-name {
+  font-family: 'Dancing Script', cursive; /* Signature-style font */
+  font-size: 2rem;
+  color: white;
+}
+
+.navbar-right ul {
+  display: flex;
+  justify-content: flex-end; /* Aligns the sections to the right */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-right ul li {
+  margin: 0 15px;
+}
+
+.navbar-right ul li a {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none; /* Ensures the links don’t have underline */
+  cursor: pointer;
+}
+
+.navbar-right ul li a:hover {
+  color: #28a745; /* Hover color */
+}
+
+.resume-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.resume-btn:hover {
+  background-color: #218838;
+}
+
+
+/* Home Section */
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Starry background */
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.home h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 1.25rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Typing effect with looping */
+.typing {
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  70% {
+    width: 100%;
+  }
+  100% {
+    width: 0; /* Typing reset to allow retyping */
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+/* Scroll down section */
+.scroll-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.scroll-down p {
+  font-size: 1.25rem;
+  margin-right: 15px;
+}
+
+.scroll-down .mouse {
+  width: 24px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50px;
+  position: relative;
+}
+
+.scroll-down .mouse::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  animation: scroll-down 1.5s infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 1;
+    top: 8px;
+  }
+  50% {
+    opacity: 0.5;
+    top: 16px;
+  }
+  100% {
+    opacity: 1;
+    top: 8px;
+  }
+}
+
+/* Contact Button */
+.contact-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 0.7rem 2rem;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.contact-btn:hover {
+  background-color: #218838;
+}
+
+.contact-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.75rem;
+  margin: 0 15px;
+}
+
+.social-icons a:hover {
+  color: #28a745;
+}
+
+/* About Me Section Styles */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background-color: #333; /* Dark background */
+  color: white; /* White text */
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-text {
+  flex: 1;
+  margin-right: 50px; /* Space between text and image */
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.about-text p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #ddd; /* Lighter shade of white */
+}
+
+.about-image {
+  flex: 0.5;
+  text-align: center; /* Centers the image */
+}
+
+.about-image img {
+  max-width: 100%;
+  height: 50%;
+  border-radius: 5px; /* Optional: add rounded corners to the image */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack the text and image on top of each other */
+  }
+
+  .about-text {
+    margin-right: 0;
+    margin-bottom: 40px; /* Add some margin below the text */
+  }
+}
+
+
+/* Projects Section */
+.projects-section {
+  padding: 50px 0;
+  background-color: #121212; 
+  color: white;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: justify;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  position: relative;
+  width: 300px;
+  background-color: #333; /* Grey background for the card */
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  color: #fff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.2;
+  text-align: center;
+  z-index: 10; /* Keeps the title above the slide-in */
+  position: relative;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 10px; /* Reduced margin to minimize space */
+}
+
+.source-code-link {
+  margin-top: 20px; /* Adds spacing between content and Source Code link */
+  font-size: 1rem;
+  color: #00e676;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s;
+  z-index: 10; /* Ensures the Source Code link is above the overlay */
+  position: relative;
+}
+
+.source-code-link:hover {
+  color: #00ff88;
+}
+
+.source-code-link svg {
+  font-size: 1.2rem;
+}
+
+.tech-stack {
+  position: absolute;
+  top: 50px; /* Leaves space for the title */
+  left: 0;
+  right: 0;
+  bottom: 50px; /* Leaves space for Source Code link */
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items to top */
+  padding: 20px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 0.5s, opacity 0.5s;
+  z-index: 5;
+}
+
+.project-card:hover .tech-stack {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.tech-stack h4 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.tech-list span {
+  background-color: #666;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+
+
+
+/* Skills Section */
+.skills-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.skill-icon.pandas {
+  background-color: #fff; /* Light background specifically for Pandas */
+  border-radius: 50%; /* Circular background */
+}
+
+
+.skill-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background-color: #333; /* Dark background */
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.contact-form h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  display: block;
+  font-size: 1rem;
+  color: #ff5722;
+  margin-bottom: 5px;
+}
+
+.input-box input, .input-box textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ff5722;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  font-size: 1rem;
+}
+
+.input-box input:focus, .input-box textarea:focus {
+  outline: none;
+  border-color: #ff7043;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff7043;
+}
+
+button .icon {
+  margin-left: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background-color: #333; /* Dark background */
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  margin-right: 50px; /* Adjust the spacing between form and contact info */
+}
+
+.contact-form h1 {
+  font-size: 2.8rem; /* Increase the size of the heading */
+  margin-bottom: 20px;
+}
+
+.input-box {
+  margin-bottom: 25px; /* Increase space between input boxes */
+}
+
+.input-box label {
+  display: block;
+  font-size: 1.2rem; /* Make label font bigger */
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+.input-box input, .input-box textarea {
+  width: 100%;
+  padding: 15px; /* Increase padding to make input boxes larger */
+  border: 2px solid #ff5722;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  font-size: 1.2rem; /* Increase the font size in input fields */
+}
+
+.input-box input:focus, .input-box textarea:focus {
+  outline: none;
+  border-color: #ff7043;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px; /* Increase the height of the message box */
+}
+
+button {
+  padding: 15px 25px; /* Increase button size */
+  background-color: #ff5722;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem; /* Make button font bigger */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff7043;
+}
+
+button .icon {
+  margin-left: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background-color: #333; /* Dark background */
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  margin-right: 50px; /* Adjust the spacing between form and contact info */
+}
+
+.contact-form h1 {
+  font-size: 2.8rem; /* Increase the size of the heading */
+  margin-bottom: 20px;
+}
+
+.input-box {
+  margin-bottom: 25px; /* Increase space between input boxes */
+}
+
+.input-box label {
+  display: block;
+  font-size: 1.2rem; /* Make label font bigger */
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+.input-box input, .input-box textarea {
+  width: 100%;
+  padding: 15px; /* Increase padding to make input boxes larger */
+  border: 2px solid #ff5722;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  font-size: 1.2rem; /* Increase the font size in input fields */
+}
+
+.input-box input:focus, .input-box textarea:focus {
+  outline: none;
+  border-color: #ff7043;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px; /* Increase the height of the message box */
+}
+
+button {
+  padding: 15px 25px; /* Increase button size */
+  background-color: #ff5722;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem; /* Make button font bigger */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff7043;
+}
+
+button .icon {
+  margin-left: 10px;
+}
+
+
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background-color: #333; /* Dark background */
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  margin-right: 50px; /* Adjust the spacing between form and contact info */
+}
+
+.contact-form h1 {
+  font-size: 2.8rem; /* Increase the size of the heading */
+  margin-bottom: 20px;
+}
+
+.input-box {
+  margin-bottom: 25px; /* Increase space between input boxes */
+}
+
+.input-box label {
+  display: block;
+  font-size: 1.2rem; /* Make label font bigger */
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+.input-box input, .input-box textarea {
+  width: 100%;
+  padding: 15px; /* Increase padding to make input boxes larger */
+  border: 2px solid #ff5722;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+  font-size: 1.2rem; /* Increase the font size in input fields */
+}
+
+.input-box input:focus, .input-box textarea:focus {
+  outline: none;
+  border-color: #ff7043;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px; /* Increase the height of the message box */
+}
+
+button {
+  padding: 15px 25px; /* Increase button size */
+  background-color: #ff5722;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem; /* Make button font bigger */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff7043;
+}
+
+button .icon {
+  margin-left: 10px;
+}
+
+/* Contact Information */
+.contact-info {
+  flex: 1;
+  text-align: right; /* Align contact info to the right */
+}
+
+.contact-details {
+  margin-bottom: 50px; /* Increase space between contact details */
+}
+
+.contact-details p {
+  font-size: 1.4rem; /* Increase font size for contact info text */
+  margin-bottom: 20px; /* Add more space between each contact item */
+}
+
+.contact-details .icon {
+  margin-right: 15px; /* Space between icon and text */
+  font-size: 2rem; /* Increase icon size */
+  color: #ff5722;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-left: 15px; /* Adjust spacing between social icons */
+  font-size: 2.5rem; /* Increase social icon size */
+  color: #ff5722;
+}
+
+.social-icons a:hover {
+  color: #ff7043;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form, .contact-info {
+    margin-right: 0;
+    margin-bottom: 40px;
+    text-align: center; /* Center the content on mobile */
+  }
+
+  .social-icons a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .contact-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .social-icons a {
+    font-size: 1.25rem;
+  }
+
+  .about h2, .projects h2, .skills h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p, .projects li, .skills ul li {
+    font-size: 1rem;
+  }
+
+  .contact input,
+  .contact textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact button {
+    font-size: 1rem;
+  }
+}
+
+
+/* Education Section */
+.education-section {
+  padding: 50px 0;
+  background-color: transparent;
+  background-size: cover;
+  color: grey;
+  padding-left: 50px;
+}
+
+.education-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-content {
+  flex: 1;
+  margin-right: 50px; /* Adjust space between content and image */
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.education-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Makes the image circular */
+  margin-right: 20px;
+}
+
+.education-details {
+  text-align: left;
+}
+
+.education-details h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.education-details p {
+  margin: 5px 0;
+  color: white; /* #ccc  */
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: white;   /* #444 */
+  margin: 20px 0;
+}
+
+.education-image {
+  flex: 0.5; /* Takes half the remaining space */
+}
+
+.education-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.success-message {
+  color: #4CAF50; /* Green color */
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
