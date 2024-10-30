@@ -16,7 +16,7 @@ const About = () => {
             I'm always eager to learn more and contribute to meaningful projects.
           </p>
           <p>
-            Outside the data world, you can find me hiking, watching anime, or experimenting with new recipes in the kitchen.
+            Outside the data world, you can find me hiking, watching anime, or experimenting with new recipes in the kitchen. 
           </p>
         </div>
         <div className="about-image">
