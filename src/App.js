@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll'; // Import from react-scroll
+import { Link as ScrollLink } from 'react-scroll';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
