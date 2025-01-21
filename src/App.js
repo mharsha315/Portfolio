@@ -8,7 +8,7 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import './App.css';
-import resume from './Assets/Harshavardhana_Mudduluru.pdf'
+import resume from './Assets/Harshavardhana_Mudduluru_.pdf'
 
 function App() {
   return (
