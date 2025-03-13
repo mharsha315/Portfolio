@@ -8,7 +8,7 @@ const Home = () => {
   const messages = [
     "Exploring the world of Java Full Stack Development, Data Science, and AI to create impactful solutions.",
     "My projects, check them out!",
-    "You can find everything about me in here!",
+    "You can find everything about me in here!!",
   ];
 
   // Effect to cycle through the messages continuously
