@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useState, useEffect } from "react";
 
 const Home = () => {
   // State to track the index of the current message
@@ -7,9 +6,9 @@ const Home = () => {
 
   // Array of messages to loop through
   const messages = [
-    "Analyst, ready to turn data into insights.",
-    "My projects, check them out!", 
-    "You can find everything about me in here!"
+    "Exploring the world of Java Full Stack Development, Data Science, and AI to create impactful solutions.",
+    "My projects, check them out!",
+    "You can find everything about me in here!",
   ];
 
   // Effect to cycle through the messages continuously
@@ -24,8 +23,8 @@ const Home = () => {
   return (
     <section id="home" className="home">
       <h1>Hi, I'm Harshavardhana Mudduluru.</h1>
-      <h2> An Aspiring Data Analyst!</h2>
-      
+      <h2> An aspiring Tech enthusiast!</h2>
+
       {/* Typing effect: message is cycled and re-typed */}
       <p className="typing">{messages[currentMessageIndex]}</p>
 
@@ -36,17 +35,31 @@ const Home = () => {
       </div>
 
       {/* Contact button */}
-      <button className="contact-btn"><a href="#contact">Contact Me!</a></button>
+      <button className="contact-btn">
+        <a href="#contact">Contact Me!</a>
+      </button>
 
       {/* Social icons */}
       <div className="social-icons">
-        <a href="https://www.linkedin.com/in/harshavardhana-mudduluru-062080199/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/harshavardhana-mudduluru-062080199/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fab fa-linkedin"></i>
         </a>
-        <a href="https://github.com/mharsha315" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/mharsha315"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fab fa-github"></i>
         </a>
-        <a href="https://x.com/Harshav60750095" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://x.com/Harshav60750095"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fab fa-twitter"></i>
         </a>
       </div>
