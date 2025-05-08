@@ -17,6 +17,11 @@ import PyTorch from "../Assets/skills_img/pytorch-svgrepo-com.svg";
 import Tensorflow from "../Assets/skills_img/tensorflow-svgrepo-com.svg";
 import GithubActions from "../Assets/skills_img/github-svgrepo-com.svg";
 import JIRA from "../Assets/skills_img/jira-svgrepo-com.svg";
+import Bootstrap from "../Assets/skills_img/bootstrap-svgrepo-com.svg";
+import Gradle from "../Assets/skills_img/gradle-svgrepo-com.svg";
+import Kubernetes from "../Assets/skills_img/kubernetes-svgrepo-com.svg";
+import Postman from "../Assets/skills_img/postman-icon-svgrepo-com.svg";
+import Tomcat from "../Assets/skills_img/tomcat-svgrepo-com.svg";
 
 const skills = [
   { name: "Python", imgSrc: python },
@@ -37,6 +42,11 @@ const skills = [
   { name: "Tensorflow", imgSrc: Tensorflow },
   { name: "Github-Actions", imgSrc: GithubActions },
   { name: "JIRA", imgSrc: JIRA },
+  { name: "Boot-strap", imgSrc: Bootstrap },
+  { name: "Gradle", imgSrc: Gradle },
+  { name: "Kubernetes", imgSrc: Kubernetes },
+  { name: "Postman", imgSrc: Postman },
+  { name: "Tomcat", imgSrc: Tomcat },
 ];
 
 const Skills = () => {

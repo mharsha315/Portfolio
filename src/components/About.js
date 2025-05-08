@@ -20,10 +20,10 @@ const About = () => {
             in the ever-evolving tech landscape.
           </p>
           <p>
-            When I’m not coding or crunching numbers and stuff, I enjoy
-            exploring new technologies, working on personal projects, and
-            sharing knowledge with the tech community. I'm always eager to
-            learn, collaborate, and make meaningful contributions.
+            When I’m not coding or crunching numbers or developing some websites
+            and stuff, I enjoy exploring new technologies, working on personal
+            projects, and sharing knowledge with the tech community. I'm always
+            eager to learn, collaborate, and make meaningful contributions.
           </p>
           <p>
             Outside the data world, you can find me hiking, watching anime, or
