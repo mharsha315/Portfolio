@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.78751d11.css",
-    "main.js": "/Portfolio/static/js/main.fd1c49b8.js",
+    "main.js": "/Portfolio/static/js/main.43944d68.js",
     "static/js/453.acca0757.chunk.js": "/Portfolio/static/js/453.acca0757.chunk.js",
     "static/media/profile.JPEG": "/Portfolio/static/media/profile.e4dc73eb61fb77743a42.JPEG",
-    "static/media/Harshavardhana_Mudduluru.pdf": "/Portfolio/static/media/Harshavardhana_Mudduluru.5430a4222836d4729edc.pdf",
+    "static/media/Harshavardhana Mudduluru.pdf": "/Portfolio/static/media/Harshavardhana Mudduluru.296a10353e4c9e4f377d.pdf",
     "static/media/education.jpg": "/Portfolio/static/media/education.2597b1add08385d2aec6.jpg",
     "static/media/concordia.jpg": "/Portfolio/static/media/concordia.a4ff041797303e1f0bca.jpg",
     "static/media/postman-icon-svgrepo-com.svg": "/Portfolio/static/media/postman-icon-svgrepo-com.c74cd48d00339ba03ff2e6ed3f9d0c4d.svg",
@@ -33,11 +33,11 @@
     "static/media/css-3-svgrepo-com.svg": "/Portfolio/static/media/css-3-svgrepo-com.cce1e71a67427e01caedeed1b01d4efa.svg",
     "static/media/html-5-svgrepo-com.svg": "/Portfolio/static/media/html-5-svgrepo-com.0c8899975fbb5345002df9b408db0cc0.svg",
     "main.78751d11.css.map": "/Portfolio/static/css/main.78751d11.css.map",
-    "main.fd1c49b8.js.map": "/Portfolio/static/js/main.fd1c49b8.js.map",
+    "main.43944d68.js.map": "/Portfolio/static/js/main.43944d68.js.map",
     "453.acca0757.chunk.js.map": "/Portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.78751d11.css",
-    "static/js/main.fd1c49b8.js"
+    "static/js/main.43944d68.js"
   ]
 }
